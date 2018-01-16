@@ -55,3 +55,9 @@ content {
 	margin-right: auto;
 	text-align: center;
 }
+#showcase {
+	/*align="left" width="560" height="315"
+	Plus, it needs padding.   
+	To be used on all images/videos that will showcase my work inside of content section.
+	*/
+}
