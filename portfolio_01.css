@@ -27,6 +27,12 @@ h1 {
 
 }
 a:link {
+	color: white;
+}
+a:visited {
+	color:grey;
+}
+#black	{
 	color: black;
 }
 #title	{
@@ -54,10 +60,33 @@ content {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	
+	
 }
-#showcase {
-	/*align="left" width="560" height="315"
+#showcase-text {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#showcase-item {
+	/*width="560" height="315"
 	Plus, it needs padding.   
 	To be used on all images/videos that will showcase my work inside of content section.
 	*/
+	width: 560px;
+	height: 315px;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+	
+	display: inline;
+}
+#showcase {
+	/*
+	float: center;
+	*/
+	float: center;
+	max-width: 1125px;
+	margin-left: auto;
+	margin-right: auto;
 }
