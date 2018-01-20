@@ -5,47 +5,99 @@
 		<link rel="stylesheet" type"text/css" href="portfolio_01.css" />
 		<meta name="description" content="Page description goes here" />
 		<meta name="keywords" content="word1, word2" />
-		<meta name="author" content="Bob Smith" />
+		<meta name="author" content="sonictimm" />
 		
-		<title>Title of web page, shows on browser window</title>
+		<title>Timm Johnson | Selected Projects</title>
 	</head>
 	<body>
-		<p>This is a text block!!!!</p>
-		<p>Luv it!</p>
-		
+
+	<!--Awesome e-mail bot deceiving javascript:
 		<script language="JavaScript">
 		var username = "sonictimm";
 		var hostname = "gmail";
 		var email = username + "@" + hostname  + ".com";
 		document.write("<a href='" + "mail" + "to:" + email + "'>" + email + "</a>");
 		</script>
-		
+		-->
 		<header>
 			<h1 id="title">Timm Johnson    </h1> 
+			
+					<nav>
+			 <a href="index.html" id="black">About</a>	&nbsp;	<a href="Portfolio.html" id="black">Portfolio</a>	&nbsp;	<a href="resume.pdf" id="black" target="_blank">Resumè</a>	&nbsp;	Blog
+		</nav>
+			
 			<div id="email"><h3><script language="JavaScript">
 		var username = "sonictimm";
 		var hostname = "gmail";
 		var email = username + "@" + hostname  + ".com";
-		document.write("<a href='" + "mail" + "to:" + email + "'>" + email + "</a>");
+		document.write("<a id='black' href='" + "mail" + "to:" + email + "'>" + email + "</a>");
 		</script>
 		</h3></div>
+
 		</header>
 		
+		<!-- Begin Content Section -->
+		
 		<div id="content-wrapper">
-		<content>
-			<h2>STEP WON</h2>
-			<p>go here, <a href="More-Work.html">CLICK THIS</a> LINK.    <a href="https://www.youtube.com/watch?v=djT7uufc9Kk&list=FLHEzd7EYiyEysx3lBb3dRYQ&index=8">(not this link)</a>
-</p>
 
-		</content>
 		<content>
-			<h2>STEPP TOO</h2>
-			<p>hiremepleasethankyou.
-</p>
+			<h3>Welcome to my site!</h3>
+			
+			<!-- Image Slider would go here, courtesy of https://www.w3schools.com/w3css/w3css_slideshow.asp-->
+			
+			<!-- Images to be included in slider:-->
+			<img id="slider-item" class="mySlides" src="slider/01-toast.jpg" >
+			<img id="slider-item" class="mySlides" src="slider/02-firewood.png" >
+			<img id="slider-item" class="mySlides" src="https://imgur.com/N2e300w.gif" >
+			<img id="slider-item" class="mySlides" src="slider/04-class.jpg" >
+			<!-- <img id="slider-item" class="mySlides" src="slider/05-phone.JPG" > -->
+			<img id="slider-item" class="mySlides" src="slider/06-oldmain.png" >
+			<img id="slider-item" class="mySlides" src="https://imgur.com/bLEaK47.gif" >
+			<img id="slider-item" class="mySlides" src="slider/08-eskimos.png" >
+			<img id="slider-item" class="mySlides" src="slider/09-pi.png" >
+					
+		</content>
+		<content>	
+		<div id="showcase">
+			<script >
+			var slideIndex = 0;
+			carousel();
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 	//make all images invisible
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1} 
+				x[slideIndex-1].style.display = "inherit"; 	//display the proper image
+				setTimeout(carousel, 5250); // Change image every 2 seconds
+			}
+			</script>
+			<!--End of Image Slider-->
+
+			
+			<p id="showcase-text" >I’m Timm Johnson, a Marshall University student breaking into game development.  <br /><br />
+			Recently, I've learned Unreal and Unity.  <br />Check out my work under <a href="Portfolio.html">Portfolio</a>.<br /><br />
+			I love the diverse challenges of game development, but my real drive is the player.  Whether the game relieves stress, teaches a lesson, or something else, I want to make meaningful games that give something to their players.
+			</p>
+		</div>
+		</content>
+		
+		<content>
+			<h3></h3>
+			<p id="micro" >The only games worth making are the ones worth playing.
+			</p>
+			<!-- Maybe swap out the saying every time the page loads?
+			Every good plan has a contingency plan.
+			
+			
+			-->
 		</content>
 		</div>
+		
 		<footer>
 			<p align="center">© 2018 Timm Johnson</p>
-		</footer> 
+		</footer>
 	</body>
 </html>
