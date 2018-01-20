@@ -45,6 +45,16 @@ a:visited {
 	padding-bottom: 0.4em;
 	color: #000000;
 }
+nav {
+	text-align: right;
+	line-height: 0.0;
+	float: right;
+	padding: 0px;
+}
+#spacer {
+	margin-right: 5em;
+	margin-left: 5em;
+}
 #content-wrapper {
 	max-width: 1200px;
 	background-color: #2B2B2B;
@@ -81,6 +91,7 @@ content {
 	
 	display: inline;
 }
+
 #showcase {
 	/*
 	float: center;
@@ -89,4 +100,21 @@ content {
 	max-width: 1125px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+#slider-item {
+	position: relative;
+	width: 400px;
+	height: 230px;
+	/*height: 400px;*/
+	padding-left: 4em;
+	padding-right: 4em;
+	float: right;
+	
+}
+#tiny {
+	font-size: 0.7em;
+}
+#micro {
+	font-size: 0.0001em;
 }
