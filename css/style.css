@@ -980,8 +980,11 @@ img.svg{
 	color: #eee;
 	margin-top: 16px;
 }
+/*Adding second's ability to turn red on hover*/
+.second a:hover{color: #ed2629;}
+
 .edina_tm_portfolio_list .list_inner .definition_portfolio .first a{
-	text-decoration: none;
+	text-decoration: underline;
 	color: #FFFFFF;
 	
 	-webkit-transition: all .3s ease;
@@ -1208,6 +1211,10 @@ img.svg{
 	float: left;
 }
 #edina_tm_popup_blog .full_def p{
+	display: inline-block;
+	color: #eee;
+}
+#edina_tm_popup_blog .full_def a{
 	display: inline-block;
 	color: #eee;
 }
