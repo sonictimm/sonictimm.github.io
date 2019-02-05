@@ -1,0 +1,35 @@
+<html>
+<title>Phil a Coin</title>
+
+<!-- Code from StackOverflow, https://stackoverflow.com/questions/32302066/coin-toss-with-javascript-and-html
+modded by us.-->
+<body>
+
+
+<button id="click" type="button">CLICK ME</button>
+<p>
+    You got: <br /><span id="result"></span>
+</p>
+
+
+<script>
+document.getElementById('click').onclick = click;
+
+var heads = 0;
+var tails = 0;
+function click() {  
+    x = (Math.floor(Math.random() * 2) == 0);
+    if(x){
+    	flip("<img src='https://cdn.discordapp.com/attachments/353022977727660032/542486239639633930/SPOILER_Heads.png' />");
+    }else{
+        flip("<img src='https://t2.rbxcdn.com/ce44aaa70e074692bafd9f00459f25e4' />");
+    }
+};
+function flip(coin) {
+    document.getElementById("result").innerHTML = coin;
+};
+</script>
+
+
+</body>
+</html>
