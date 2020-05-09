@@ -452,7 +452,7 @@ function edina_tm_animate_text(){
 	var animateSpan			= jQuery('.edina_tm_animation_text_word');
 	
 		animateSpan.typed({
-			strings: ["GAME DEVELOPER", "PROGRAMMER", "LEVEL DESIGNER", "HACKER"],
+			strings: ["UNREAL DEVELOPER", "C++ PROGRAMMER", "VR GUY", "GOOD ENOUGH AT UI", "WHY ARE YOU STILL READING THIS?", "¯\\_(ツ)_/¯"],
 			loop: true,
 			startDelay: 1e3,
 			backDelay: 2e3
