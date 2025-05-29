@@ -28,7 +28,7 @@ var textArray = [
     'If you are tired, do not back down, just slow down.',
     'Someday you might be Slowbro, or maybe even Slowking.  No matter what, just keep on bein.',
     'A good yawn is like a sunrise; it opens the door to great new things.',
-    'That was too fast.  Slow down and try again.',
+    'That was too fast.  Slow down and ask again later.',
     'I am the Slowpoke.  My tail is delicious.',
     'Things will slowly become clear.',
     'やぁん　やぁん　ア、やぁん'
@@ -38,8 +38,14 @@ function getAdvice() {
 
 var randomNumber = Math.floor(Math.random()*textArray.length);
 
-var advice = "asdasdasd";
-document.getElementById("result").innerHTML = textArray[randomNumber];
+//check for Navigation Timing API support
+if (window.performance && performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  document.getElementById("result").innerHTML = 'That was too fast.  Slow down and ask again later.';
+} else {
+  document.getElementById("result").innerHTML = textArray[randomNumber];
+}
+
+
 //document.getElementById("result").innerHTML = "<img src='https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/079.png' />";
 
 };
