@@ -1,0 +1,51 @@
+<html>
+<title>Slowpoke Advice</title>
+
+<!-- Code from StackOverflow, https://stackoverflow.com/questions/32302066/coin-toss-with-javascript-and-html
+modded by us.-->
+<body>
+
+<!-- <button id="getAdvice" type="button">CLICK ME</button> -->
+
+<img src="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/079.png" id="getAdvice" />
+<p>
+    After a thoughtful yawn, Slowpoke says:
+	<br /><span id="result"></span>
+</p>
+
+
+<script>
+
+document.getElementById('getAdvice').onload = getAdvice;
+
+var textArray = [
+    'Slow down and smell the roses.',
+    'Slow down and smell the roses.',
+    'Patience is the road to wisdom.',
+    'Never say anything unless it is worth taking a long time to say.',
+    'Patience is the best remedy for every trouble.',
+    'Con calma y piensa, take your time and think, should be an adage that you apply in your entire life.',
+    'If you are tired, do not back down, just slow down.',
+    'Someday you might be Slowbro, or maybe even Slowking.  No matter what, just keep on bein.',
+    'A good yawn is like a sunrise; it opens the door to great new things.',
+    'That was too fast.  Slow down and try again.',
+    'I am the Slowpoke.  My tail is delicious.',
+    'Things will slowly become clear.',
+    'やぁん　やぁん　ア、やぁん'
+];
+
+function getAdvice() {
+
+var randomNumber = Math.floor(Math.random()*textArray.length);
+
+var advice = "asdasdasd";
+document.getElementById("result").innerHTML = textArray[randomNumber];
+//document.getElementById("result").innerHTML = "<img src='https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/079.png' />";
+
+};
+
+</script>
+
+
+</body>
+</html>
